@@ -1,87 +1,79 @@
 <!DOCTYPE html>
-<html xmlms>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        function load() {
-            alert('load');
-        }
-        function blur() {
-            alert('blur');
-        }
-    </script>
-    <style>
-        aside {
-            width: 40%;
-            padding-left: .5rem;
-            margin-left: .5rem;
-            float: right;
-            box-shadow: inset 5px 0 5px -5px #29627e;
-            font-style: italic;
-            color: #29627e;
-        }
-
-        aside > p {
-            margin: .5rem;
-        }
-
-        p {
-            font-family: 'Fira Sans', sans-serif;
-        }
-        footer{
-            color: red;
-        }
-    </style>
 </head>
-<body link="black" alink="red" vlink="green" bottommargin="100px" text="blue" onload="load()">
-<header class="page-header">
-    <h1>Cute Puppies Express!</h1>
-</header>
-<a href="https://www.baidu.com">百度一下</a>
-<address>
-    <a href="mailto:jim@rock.com">jim@rock.com</a><br>
-    <a href="tel:+13115552368">(311) 555-2368</a>
-</address>
-<article class="forecast">
-    <h1>Weather forecast for Seattle</h1>
-    <article class="day-forecast">
-        <h2>03 March 2018</h2>
-        <p>Rain.</p>
-    </article>
-</article>
+<body>
+<blockquote cite="https://tools.ietf.org/html/rfc1149">
+    <p>blockquote>之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进，而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。</p>
+</blockquote>
+<dl>
+    <dd>dsfdsaf</dd>
+    <dt>Firefox</dt>
+    <dt>Mozilla Firefox</dt>
+    <dt>Fx</dt>
+    <dd>A free, open source, cross-platform, graphical web browser
+        developed by the Mozilla Corporation and hundreds of volunteers.</dd>
 
-<p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
-<aside>
-    <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
-</aside>
-<p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
-<h1>Heading level 1</h1>
-<h2>Heading level 2</h2>
-<h3>Heading level 3</h3>
-<h4>Heading level 4</h4>
-<h5>Heading level 5</h5>
-<h6>Heading level 6</h6>
+    <!-- other terms and definitions -->
+</dl>
+<p>这是一个段落。没有规定对齐方式。</p>
 
-<main>
-    <p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Australia.</p>
+<div align="left" style="border:1px solid red">
+    这是 div 元素左对齐的文本！ align=left
+</div>
+<div align="center" style="border:1px solid red">
+    这是 div 元素居中的文本！ align=center
+</div>
+<div align="right" style="border:1px solid red">
+    这是 div 元素右对齐的文本！ align=right
+</div>
 
-    <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
-</main>
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+<figure>
+    <img src="img_pulpit.jpg" tppabs="http://w3schools.com/tags/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+</figure>
 
-<section>
-    <h1>Heading</h1>
-    <p>Bunch of awesome content</p>
-</section>
-<footer>
-    <p>© 2018 Gandalf</p>
-</footer>
+<figure>
+    <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+    <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+</figure>
+
+<p>这是一个段落。没有规定对齐方式。</p>
+
+<p>
+    This is the first paragraph of text.
+    This is the first paragraph of text.
+    This is the first paragraph of text.
+    This is the first paragraph of text.
+</p>
+
+<hr align="right"  size="100px" width="200px" color="red">
+<hr align="center" noshade="noshade" size="100px" width="200px" color="red">
+<hr align="left" noshade="noshade" size="100px" width="200px" color="red">
+<p align="left">
+    This is the second paragraph of text.
+</p>
+<p align="center">
+    This is the second paragraph of text.
+</p>
+<p align="right">
+    This is the second paragraph of text.
+</p>
+<ol reversed start="100" type="a" compact="compact">
+    <li value="25">咖啡</li>
+    <li type="1">牛奶</li>
+    <li value="36">茶</li>
+</ol>
+<ul compact="compact" type="circle">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+<pre width="2" wrap>
+    body {
+      color: red;
+    }
+</pre>
 </body>
 </html>
