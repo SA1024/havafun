@@ -3,77 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        data:hover::after {
+            content: ' (ID ' attr(value) ')';
+            font-size: .7em;
+        }
+
+    </style>
 </head>
 <body>
-<blockquote cite="https://tools.ietf.org/html/rfc1149">
-    <p>blockquote>之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进，而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。</p>
-</blockquote>
-<dl>
-    <dd>dsfdsaf</dd>
-    <dt>Firefox</dt>
-    <dt>Mozilla Firefox</dt>
-    <dt>Fx</dt>
-    <dd>A free, open source, cross-platform, graphical web browser
-        developed by the Mozilla Corporation and hundreds of volunteers.</dd>
-
-    <!-- other terms and definitions -->
-</dl>
-<p>这是一个段落。没有规定对齐方式。</p>
-
-<div align="left" style="border:1px solid red">
-    这是 div 元素左对齐的文本！ align=left
-</div>
-<div align="center" style="border:1px solid red">
-    这是 div 元素居中的文本！ align=center
-</div>
-<div align="right" style="border:1px solid red">
-    这是 div 元素右对齐的文本！ align=right
-</div>
-
-<figure>
-    <img src="img_pulpit.jpg" tppabs="http://w3schools.com/tags/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
-</figure>
-
-<figure>
-    <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
-    <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
-</figure>
-
-<p>这是一个段落。没有规定对齐方式。</p>
-
-<p>
-    This is the first paragraph of text.
-    This is the first paragraph of text.
-    This is the first paragraph of text.
-    This is the first paragraph of text.
-</p>
-
-<hr align="right"  size="100px" width="200px" color="red">
-<hr align="center" noshade="noshade" size="100px" width="200px" color="red">
-<hr align="left" noshade="noshade" size="100px" width="200px" color="red">
-<p align="left">
-    This is the second paragraph of text.
-</p>
-<p align="center">
-    This is the second paragraph of text.
-</p>
-<p align="right">
-    This is the second paragraph of text.
-</p>
-<ol reversed start="100" type="a" compact="compact">
-    <li value="25">咖啡</li>
-    <li type="1">牛奶</li>
-    <li value="36">茶</li>
-</ol>
-<ul compact="compact" type="circle">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
+<p><a hreflang="dsfsadf" href="http://www.w3cschool.cn/" target="_self">_self</a></p>
+<p><a hreflang="dsfsadf" href="http://www.w3cschool.cn/" target="_blank">_blank</a></p>
+<p><a hreflang="dsfsadf" href="http://www.w3cschool.cn/" target="_parent">_parent</a></p>
+<p><a hreflang="dsfsadf" href="http://www.w3cschool.cn/" target="_top">top</a></p>
+<p>Using <abbr title="超文本标记语言">HTML</abbr> is fun and easy!</p>
+<p dir="auto">This arabic word <bdi dir="rtl">232314 sdfds  sadfds dsfas</bdi> is automatically displayed right-to-left.</p>
+<p dir="auto">This arabic word <bdo dir="rtl">232314 sdfds  sadfds dsfas</bdo> is automatically displayed right-to-left.</p>
+<img src="https://img0.baidu.com/it/u=857510153,4267238650&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=675" width="200px" height="200px">
+<b >2021年</b>
+<b>新年快乐</b>
+<br clear="right">
+<cite></cite>
+<p>Regular text. <code>This is code.</code> Regular text.</p>
+<p>新产品</p>
+<p>新产品</p>
+<ul>
+    <li><data value="398">迷你番茄酱</data></li>
+    <li><data value="399">巨无霸番茄酱</data></li>
+    <li><data value="400">超级巨无霸番茄酱</data></li>
 </ul>
-<pre width="2" wrap>
-    body {
-      color: red;
-    }
-</pre>
+
+<p>Type the following in the Run dialog: <kbd>cmd</kbd><br />Then click the OK button.</p>
+
+<p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+
+<p>Everytime Kenny is killed, Stan will announce
+    Oh my God, you/they killed Kenny!
+    <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">
+        Oh my God, you/they killed Kenny!
+    </q>.
+</p>
+<ruby>
+    漢 <rp>(</rp><rt>han</rt><rp>)</rp>
+    字 <rp>(</rp><rt>zi</rt><rp>)</rp>
+</ruby>
+<ruby>
+    汉 <rt>Hàn</rt>
+    字 <rt>Zì</rt>
+</ruby>
+<s>Today's Special: Salmon</s> SOLD OUT<br>
+<span style="text-decoration:line-through;">Today's Special:
+  Salmon</span> SOLD OUT
+
+<p>Regular text. <samp>This is sample text.</samp> Regular text.</p>
+<p>Regular text.<small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small></p>
+<p>When doing x it is <strong>strong</strong> to do y before proceeding.</p>
+<p>The chemical formula of water: H<sub>2</sub>O</p>
+<p>This text is <sup>superscripted</sup></p>
+
+<p>The concert starts at <time>20:00</time>.</p>
+<p>You could use this element to highlight <u >speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+<p> A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+<p>学习 AJAX ,您必须熟悉 <wbr>Http<wbr>Request 对象。</p>
 </body>
 </html>
