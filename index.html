@@ -3,36 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        var canvas = document.getElementById('canvas');
-        var ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'green';
-        ctx.fillRect(10, 10, 100, 100);
-    </script>
 </head>
 <body>
-<embed type="image/jpg" src="https://static.runoob.com/images/runoob-logo.png" width="258" height="39">
-<embed type="video/webm" src="https://www.runoob.com/try/demo_source/movie.mp4" width="400" height="300">
-<iframe id="inlineFrameExample"
-        title="Inline Frame Example"
-        width="300"
-        height="200"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-</iframe>
-<!-- Embed a flash movie -->
-<object data="move.swf" type="application/x-shockwave-flash"></object>
-
-<!-- Embed a flash movie with parameters -->
-<object data="https://www.runoob.com/try/demo_source/movie.mp4" type="video/webm">
-    <param name="foo" value="bar">
-</object>
-<object type="image/jpg" data="https://static.runoob.com/images/runoob-logo.png" width="258" height="39"></object>
-
-
-<picture>
-    <source srcset="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg">
-    <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
-</picture>
 <canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
 
 <script>
@@ -41,6 +13,10 @@
     ctx.fillStyle='#FF0000';
     ctx.fillRect(0,0,80,100);
 </script>
-
+<noscript>
+    <!-- anchor linking to external file -->
+    <a href="http://www.mozilla.com/">External Link</a>
+</noscript>
+<p>Rocks!</p>
 </body>
 </html>
