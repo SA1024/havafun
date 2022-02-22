@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, 100, 100);
+    </script>
 </head>
 <body>
 <embed type="image/jpg" src="https://static.runoob.com/images/runoob-logo.png" width="258" height="39">
@@ -27,5 +33,14 @@
     <source srcset="https://interactive-examples.mdn.mozilla.net/media/cc0-images/surfer-240-200.jpg">
     <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
 </picture>
+<canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
+
+<script>
+    var c=document.getElementById('myCanvas');
+    var ctx=c.getContext('2d');
+    ctx.fillStyle='#FF0000';
+    ctx.fillRect(0,0,80,100);
+</script>
+
 </body>
 </html>
