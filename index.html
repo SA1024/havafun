@@ -50,7 +50,7 @@
     <option value="Safari">
 </datalist>
 
-<select name="pets" id="pet-select">
+<select name="pets" id="pet-select" autocomplete="on" multiple>
     <option value="" disabled>--Please choose an option--</option>
     <option value="dog" label="小狗">Dog</option>
     <option value="cat" selected="selected">Cat</option>
@@ -59,6 +59,20 @@
     <option value="spider">Spider</option>
     <option value="goldfish">Goldfish</option>
 </select>
+
+<form action="" method="get" class="form-example">
+    <div class="form-example">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-example">
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+        <input type="submit" value="Subscribe!">
+    </div>
+</form>
 
 
 </body>
