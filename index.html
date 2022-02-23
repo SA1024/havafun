@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        function load11() {
-            alert("load");
+    <style>
+        input {
+            accent-color: auto;
+            display: block;
+            width: 30px;
+            height: 30px;
         }
-        function click11() {
-            alert("click");
+
+        input.custom {
+            accent-color: rebeccapurple;
         }
-        function click22(){
-            var div = document.getElementById("div1");
-            div.style.height=200+"px";
-        }
-    </script>
+
+    </style>
 </head>
 <body>
-<div id="div1" style="height: 100px;width: 100px;background-color: red" onresize="load11()">
-    你好啊
-</div>
-<div style="height: 100px;width: 100px;background-color: red" onclick="click11()">
-    你好啊
-</div>
-<button onclick="click22()" name="button">点击</button>
-<script>
-    function click() {
-        alert("load");
-    }
-</script>
+<input type="checkbox" checked />
+<input type="checkbox" class="custom" checked />
+
 </body>
 </html>
