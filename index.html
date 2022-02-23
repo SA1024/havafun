@@ -18,9 +18,22 @@
         a:link { color: blue; }          /* 未访问链接 */
         a:visited { color: purple; }     /* 已访问链接 */
         a:hover { background: yellow; }  /* 用户鼠标悬停 */
-        a:active { color: green; }         /* 激活链接 */
+        a:active { color: red; }         /* 激活链接 */
 
         p:active { background: #eee; }   /* 激活段落 */
+
+        @counter-style additive-symbols-example {
+            system: additive;
+            additive-symbols:V 5, IV 4, I 1;
+        }
+        .list {
+            list-style: additive-symbols-example;
+        }
+
+        .boring-text::after {
+            content: "<- 无聊!";
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -32,5 +45,14 @@
     <a href="#">This link will turn red while you click on it.</a>
     The paragraph will get a gray background while you click on it or the link.
 </p>
+
+<ul class="list">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+</ul>
+<p class="boring-text">这是些无聊的文字</p>
 </body>
 </html>
