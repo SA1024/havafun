@@ -4,50 +4,40 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #border-box{
-            border: 10px dotted red;
-            background-color: #ffd200;
-            width: 500px;
-            height: 450px;
-            background-clip: border-box;
+        div
+        {
+            border:10px solid black;
+            padding:35px;
+            background-image: linear-gradient(yellow,yellow);
+            background-repeat:no-repeat;
+            background-position:left;
         }
-        #padding-box{
-            border: 10px dotted red;
-            background-color: #ffd200;
-            width: 500px;
-            height: 450px;
-            background-clip: padding-box;
+        #div1
+        {
+            background-origin:border-box;
         }
-        #content-box{
-            border: 10px dotted red;
-            background-color: #ffd200;
-            padding: 35px;
-            width: 500px;
-            height: 450px;
-            background-clip: content-box;
+        #div2
+        {
+            background-origin:content-box;
         }
-        #text{
-            border: 10px dotted red;
-            background-color: #ffd200;
-            padding: 35px;
-            width: 500px;
-            height: 450px;
-            -webkit-background-clip: text;;
+        #div3{
+            background-origin: padding-box;
         }
     </style>
 </head>
 <body>
-<div id="border-box">
-    sadfdsafdsf
+<div id="div1">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 </div>
-<div id="padding-box">
-    asdfdsafadsf
+
+<p>背景图像的相对位置的内容框：</p>
+<div id="div2">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 </div>
-<div id="content-box">
-    sadfdsaf
-</div>
-<div id="text">
-    sadfdsaf32432432
+
+<p>背景图像的相对位置的内容框：</p>
+<div id="div3">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 </div>
 </body>
 </html>
