@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #bitmap {
-            border: 30px solid transparent;
-            padding: 20px;
-            border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30;
-            border-image-outset: 7px 12px 14px 5px;
-        }
+        /*#bitmap {*/
+        /*    border: 30px solid transparent;*/
+        /*    padding: 20px;*/
+        /*    border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30;*/
+        /*    border-image-outset: 7px 12px 14px 5px;*/
+        /*}*/
         #gradient {
             border: 30px solid;
-            border-image: linear-gradient(red, yellow) 10;
-            border-image-outset: 50px;
+            border-image-source: url("https://mdn.mozillademos.org/files/4127/border.png");
+            border-image-width: 30px;
+            border-image-outset: 20px;
+            border-image-repeat: repeat;
             padding: 20px;
+            border-image-slice: 10%;
         }
 
     </style>
