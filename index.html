@@ -1,45 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head>
-    <meta charset="utf-8">
-    <title>菜鸟教程(runoob.com)</title>
+    <meta charset="utf-8" />
+    <title>CSS bottom属性详解-CSS教程</title>
+    <meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
     <style>
-        table.ex1
-        {
-            border-collapse:separate;
-            border-spacing:100px;
-        }
-        table.ex2
-        {
-            border-collapse:separate;
-            border-spacing:10px 50px;
+        .test{
+            position: relative;
+            width:200px;
+            height:200px;
+            padding:5px 10px;
+            background:#c00;
+            color:#fff;
+            line-height:12;
+            bottom: -1200px;
         }
     </style>
 </head>
 <body>
-<table class="ex1" border="1">
-    <tr>
-        <td>Peter</td>
-        <td>Griffin</td>
-    </tr>
-    <tr>
-        <td>Lois</td>
-        <td>Griffin</td>
-    </tr>
-</table>
-<br>
-
-<table class="ex2" border="1">
-    <tr>
-        <td>Cleveland</td>
-        <td>Brown</td>
-    </tr>
-    <tr>
-        <td>Glenn</td>
-        <td>Quagmire</td>
-    </tr>
-</table>
-
-<p><b>注意:</b>仅当 !DOCTYPE 已经定义时 IE8支持 border-spacing 属性</p>
+<div class="test">我是一个test</div>
 </body>
 </html>
