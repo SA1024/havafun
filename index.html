@@ -5,19 +5,23 @@
     <title>CSS bottom属性详解-CSS教程</title>
     <meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
     <style>
-        .test{
-            position: relative;
-            width:200px;
-            height:200px;
-            padding:5px 10px;
-            background:#c00;
-            color:#fff;
-            line-height:12;
-            bottom: -1200px;
+        .example {
+            background: linear-gradient(to bottom right, yellow, green);
+            box-shadow:
+                    8px 8px 10px 0px deeppink,
+                    -5px -5px 5px 0px blue,
+                    5px 5px 15px 0px yellow;
+            padding: 0em 1em;
+            border-radius: 16px;
+            border-style: solid;
+            margin-left: 10px;
+            font: 24px sans-serif;
+            line-height: 2;
+            -webkit-box-decoration-break: clone;
         }
     </style>
 </head>
 <body>
-<div class="test">我是一个test</div>
+<span class="example">The<br>quick<br>orange fox</span>
 </body>
 </html>
