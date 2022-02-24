@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        q::before {
-            content: "«";
-            color: blue;
+        .exampleText {
+            writing-mode: horizontal-tb;
+            background-color: yellow;
+            block-size: 200px;
         }
-        q::after {
-            content: "»";
-            color: red;
+        .exampleText1{
+            block-size: 150px;
+            background-color: red;
+            writing-mode: vertical-rl;
+        }
+        .exampleText2{
+            background-color: red;
+            block-size: auto;
+            writing-mode: horizontal-tb;
+        }
+        .exampleText3{
+            background-color: red;
+            block-size: auto;
+            writing-mode: vertical-lr;
         }
     </style>
 </head>
 <body>
-<q>一些引用</q>, 他说, <q>比没有好。</q>.
+<p class="exampleText">Example text</p>
+<p class="exampleText1">Example text</p>
+<p class="exampleText2">Example text</p>
+<p class="exampleText3">Example text</p>
 </body>
 </html>
