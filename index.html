@@ -4,54 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .collapse {
-            border-collapse: collapse;
+        #bitmap {
+            border: 30px solid transparent;
+            padding: 20px;
+            border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30;
+            border-image-outset: 7px 12px 14px 5px;
         }
-        .separate {
-            border-collapse: separate;
+        #gradient {
+            border: 30px solid;
+            border-image: linear-gradient(red, yellow) 10;
+            border-image-outset: 50px;
+            padding: 20px;
         }
-        table {
-            display: inline-table;
-            margin: 1em;
-            border: dashed 6px;
-            border-width: 6px;
-        }
-        table th, table td {
-            border: solid 3px;
-        }
-        .fx { border-color: orange blue; }
-        .gk { border-color: black red; }
-        .ie { border-color: blue gold; }
-        .tr { border-color: aqua; }
-        .sa { border-color: silver blue; }
-        .wk { border-color: gold blue; }
-        .ch { border-color: red yellow green blue; }
-        .bk { border-color: navy blue teal aqua; }
-        .op { border-color: red; }
+
     </style>
 </head>
 <body>
-<table class="separate">
-    <caption><code>border-collapse: separate</code></caption>
-    <tbody>
-    <tr><th>Browser</th> <th>Layout Engine</th></tr>
-    <tr><td class="fx">Firefox</td> <td class="gk">Gecko</td></tr>
-    <tr><td class="ed">Edge</td> <td class="tr">EdgeHTML</td></tr>
-    <tr><td class="sa">Safari</td> <td class="wk">Webkit</td></tr>
-    <tr><td class="ch">Chrome</td> <td class="bk">Blink</td></tr>
-    <tr><td class="op">Opera</td> <td class="bk">Blink</td></tr>
-    </tbody>
-</table>
-<table class="collapse">
-    <caption><code>border-collapse: collapse</code></caption>
-    <tbody>
-    <tr><th>Browser</th> <th>Layout Engine</th></tr>
-    <tr><td class="fx">Firefox</td> <td class="gk">Gecko</td></tr>
-    <tr><td class="ed">Edge</td> <td class="tr">EdgeHTML</td></tr>
-    <tr><td class="sa">Safari</td> <td class="wk">Webkit</td></tr>
-    <tr><td class="ch">Chrome</td> <td class="bk">Blink</td></tr>
-    <tr><td class="op">Opera</td> <td class="bk">Blink</td></tr>
-    </tbody>
-</table>
+<div id="bitmap">The image is stretched to fill the area.</div>
+<div id="gradient">The image is stretched to fill the area.</div>
 </body>
 </html>
