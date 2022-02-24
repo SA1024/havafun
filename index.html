@@ -4,41 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #div1{
-            width: 500px;
-            height: 1000px;
-            background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210611094Q512b-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648261200&t=f74de79fc90b53f770d7a7db0ef0eb4a");
-            background-size: 10px,10px;
-            background-repeat: no-repeat;
-            background-position: center;
+        q::before {
+            content: "«";
+            color: blue;
         }
-        #div2{
-            width: 500px;
-            height: 1000px;
-            background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210611094Q512b-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648261200&t=f74de79fc90b53f770d7a7db0ef0eb4a");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        #div3{
-            width: 500px;
-            height: 1000px;
-            background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210611094Q512b-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648261200&t=f74de79fc90b53f770d7a7db0ef0eb4a");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
+        q::after {
+            content: "»";
+            color: red;
         }
     </style>
 </head>
 <body>
-<div id="div1">
-
-</div>
-<div id="div2">
-
-</div>
-<div id="div3">
-
-</div>
+<q>一些引用</q>, 他说, <q>比没有好。</q>.
 </body>
 </html>
