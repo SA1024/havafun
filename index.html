@@ -1,37 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style type="text/css">
-        body
-        {
-            background-color:#FFCC80;
-            background-image:url(https://pic.cyol.com/img/20220219/img_96fa4a0aaeaed29b2bc81b830aa72de9c6_c.jpg);
-            background-repeat:no-repeat
-        }
-        div{
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 500px;
             height: 1000px;
-            width: 100px;
+            background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210611094Q512b-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648261200&t=f74de79fc90b53f770d7a7db0ef0eb4a");
+            background-size: 10px,10px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #div2{
+            width: 500px;
+            height: 1000px;
+            background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210611094Q512b-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648261200&t=f74de79fc90b53f770d7a7db0ef0eb4a");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #div3{
+            width: 500px;
+            height: 1000px;
+            background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp09%2F210611094Q512b-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648261200&t=f74de79fc90b53f770d7a7db0ef0eb4a");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     </style>
-    <script type="text/javascript">
-        function changePosition()
-        {
-            document.body.style.backgroundPositionX="right";
-            document.body.style.backgroundPositionY="bottom"
-        }
-        function  changePosition1(){
-            document.body.style.backgroundPositionX="left";
-            document.body.style.backgroundPositionY="top"
-        }
-
-    </script>
 </head>
 <body>
-<div>
+<div id="div1">
 
 </div>
-<input type="button" onclick="changePosition()"
-       value="Change background-image's x-position" />
-<input type="button" onclick="changePosition1()"
-       value="Change background-image's y-position" />
+<div id="div2">
+
+</div>
+<div id="div3">
+
+</div>
 </body>
 </html>
