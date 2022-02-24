@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        div
-        {
-            border:10px solid black;
-            padding:35px;
-            background-image: linear-gradient(yellow,yellow);
-            background-repeat:no-repeat;
-            background-position:left;
+        /* 被所有 div 共享 */
+        div {
+            background-color: #FFEE99;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 80px;
+            margin-bottom: 12px;
         }
-        #div1
-        {
-            background-origin:border-box;
+
+
+        /* 这些例子使用 `background` 缩写 */
+        .exampleone {
+            background: url("https://developer.mozilla.org/samples/cssref/images/startransparent.gif") #FFEE99 2.5cm bottom no-repeat;
         }
-        #div2
-        {
-            background-origin:content-box;
+        .exampletwo {
+            background: url("https://developer.mozilla.org/samples/cssref/images/startransparent.gif") #FFEE99 3em 50% no-repeat;
         }
-        #div3{
-            background-origin: padding-box;
+
+        /*
+        多背景图片：每个图片依次和相应的 `background-position` 匹配
+        */
+        .examplethree {
+            background-image:    url("https://developer.mozilla.org/samples/cssref/images/startransparent.gif"),
+            url("https://mdn.mozillademos.org/files/7693/catfront.png");
+            background-position: 0px 0px,
+            center;
         }
+
     </style>
 </head>
 <body>
-<div id="div1">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-</div>
-
-<p>背景图像的相对位置的内容框：</p>
-<div id="div2">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-</div>
-
-<p>背景图像的相对位置的内容框：</p>
-<div id="div3">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-</div>
+<div class="exampleone">Example One</div>
+<div class="exampletwo">Example Two</div>
+<div class="examplethree">Example Three</div>
 </body>
 </html>
