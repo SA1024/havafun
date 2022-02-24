@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
     <style>
-        /*#bitmap {*/
-        /*    border: 30px solid transparent;*/
-        /*    padding: 20px;*/
-        /*    border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 30;*/
-        /*    border-image-outset: 7px 12px 14px 5px;*/
-        /*}*/
-        #gradient {
-            border: 30px solid;
-            border-image-source: url("https://mdn.mozillademos.org/files/4127/border.png");
-            border-image-width: 30px;
-            border-image-outset: 20px;
-            border-image-repeat: repeat;
-            padding: 20px;
-            border-image-slice: 10%;
+        table.ex1
+        {
+            border-collapse:separate;
+            border-spacing:100px;
         }
-
+        table.ex2
+        {
+            border-collapse:separate;
+            border-spacing:10px 50px;
+        }
     </style>
 </head>
 <body>
-<div id="bitmap">The image is stretched to fill the area.</div>
-<div id="gradient">The image is stretched to fill the area.</div>
+<table class="ex1" border="1">
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+    </tr>
+</table>
+<br>
+
+<table class="ex2" border="1">
+    <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+    </tr>
+    <tr>
+        <td>Glenn</td>
+        <td>Quagmire</td>
+    </tr>
+</table>
+
+<p><b>注意:</b>仅当 !DOCTYPE 已经定义时 IE8支持 border-spacing 属性</p>
 </body>
 </html>
