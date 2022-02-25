@@ -1,78 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
     <style>
-        #p1{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: center;
+        h1.under {
+            text-decoration: underline;
         }
-        #p2{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: auto;
+        h1.over {
+            text-decoration: overline;
         }
-        #p3{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: auto;
+        p.line {
+            text-decoration: line-through;
         }
-        #p4{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: start;
+        p.blink {
+            text-decoration: blink;
         }
-        #p5{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: end;
+        a.none {
+            text-decoration: none;
         }
-        #p6{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: left;
+        p.underover {
+            text-decoration: underline overline;
         }
-        #p7{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: right;
-        }
-        #p8{
-            font-size: 1.4em;
-            text-align: justify;
-            -moz-text-align-last: center;
-            text-align-last: justify;
-        }
+
     </style>
 </head>
+
 <body>
-<p id="p1">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p2">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p3">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p4">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p5">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p6">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p7">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p8">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p9">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
-1
-<p id="p10">Integer elementum massa at nulla placerat varius. Suspendisse in libero risus, in interdum massa. Vestibulum ac leo vitae metus faucibus gravida ac in neque. Nullam est eros, suscipit sed dictum quis, accumsan a ligula.</p>
+<h1 class="under">下划线</h1>
+<p class="line">删除线</p>
+<p class="blink">闪烁效果，但浏览器不会显示</p>
+<h1 class="over">下划线</h1>
+<p>这是一个 <a class="none" href="#">链接</a>，默认情况下链接是有下划线的，这边我们移除它。</p>
+<p class="underover">上划线与下划线</p>
+
 </body>
+
 </html>
