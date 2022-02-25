@@ -1,39 +1,45 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>菜鸟教程(runoob.com)</title>
-    <style>
-        h1.under {
-            text-decoration: underline;
-        }
-        h1.over {
-            text-decoration: overline;
-        }
-        p.line {
-            text-decoration: line-through;
-        }
-        p.blink {
-            text-decoration: blink;
-        }
-        a.none {
-            text-decoration: none;
-        }
-        p.underover {
-            text-decoration: underline overline;
+    <style type="text/css">
+        .wrapper {
+            position: relative;
         }
 
+        .dashed-box {
+            position: relative;
+            z-index: 1;
+            border: dashed;
+            height: 8em;
+            margin-bottom: 1em;
+            margin-top: 2em;
+        }
+        .gold-box {
+            position: absolute;
+            z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+            background: gold;
+            width: 80%;
+            left: 60px;
+            top: 3em;
+        }
+        .green-box {
+            position: absolute;
+            z-index: auto; /* put .green-box above .dashed-box */
+            background: lightgreen;
+            width: 20%;
+            left: 65%;
+            top: -25px;
+            height: 7em;
+            opacity: 0.9;
+        }
     </style>
 </head>
 
 <body>
-<h1 class="under">下划线</h1>
-<p class="line">删除线</p>
-<p class="blink">闪烁效果，但浏览器不会显示</p>
-<h1 class="over">下划线</h1>
-<p>这是一个 <a class="none" href="#">链接</a>，默认情况下链接是有下划线的，这边我们移除它。</p>
-<p class="underover">上划线与下划线</p>
-
+<h1>This is a heading</h1>
+<div class="wrapper">
+    <div class="dashed-box">Dashed box1</div>
+    <div class="gold-box">Gold box3</div>
+    <div class="green-box">Green box2</div>
+</div>
 </body>
-
 </html>
