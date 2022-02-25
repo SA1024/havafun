@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .center {
-            outline: #ffd200 2px solid;
-            margin: auto;
-            background: lime;
-            width: 66%;
+        body{
+            direction: rtl;
         }
+        h1 {text-align:center}
+        h2 {text-align:left}
+        h3 {text-align:right}
+        #h4{
+            text-align: justify;
+        }
+        #h5{
+            text-align: justify-all;
+        }
+        #h6{
+            text-align: start;
+        }
+        #h7{
+            text-align: end;
+        }
+        #h8{
+            text-align: match-parent;
+        }
+        #h9{
+            text-align: -webkit-center;
+        }
+        #h10{
 
-        .outside {
-            outline: #ffd200 2px solid;
-            /*margin: 3rem 0 0 -3rem;*/
-            margin-top: 3rem;
-            margin-right: 0rem;
-            margin-left: 0rem;
-            margin-bottom: -3rem;
-            background: cyan;
-            width: 66%;
-        }
-        .outside1{
-            outline: #ffd200 2px solid;
-            border: red 2px solid;
-            margin: 50%;
-            width: 66%;
         }
     </style>
 </head>
 <body>
-<div class="center">此元素会被居中。</div>
-
-<div class="outside">此元素会显示在包含块之外。</div>
-<div class="outside1">此元素会显示在包含块之外。</div>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h3 id="h4">This is heading 4sdfasdfdsafdsaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdsfdsfdsfsadfdsfsa dfadsfsdfdsafasfsadfsadfs adfdsafdsafdsfsdfdsaf dsfdsfsdfsdfdsfdsfds</h3>
+<h3 id="h5">This is heading 5 This is heading 4sdfasdfdsafdsaffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdsfdsfdsfsadfdsfsa dfadsfsdfdsafasfsadfsadfs adfdsafdsafdsfsdfdsaf dsfdsfsdfsdfdsfdsfds</h3>
+<h3 id="h6">This is heading 6</h3>
+<h3 id="h7">This is heading 7</h3>
+<h3 id="h8">This is heading 8</h3>
+<h3 id="h9">This is heading 9</h3>
+<h3 id="h10">This is heading 10</h3>
 </body>
 </html>
