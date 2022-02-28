@@ -1,45 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <style type="text/css">
-        .wrapper {
-            position: relative;
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        #p1{
+            display: inline;
         }
-
-        .dashed-box {
-            position: relative;
-            z-index: 1;
-            border: dashed;
-            height: 8em;
-            margin-bottom: 1em;
-            margin-top: 2em;
+        #p2{
+            display: inline;
         }
-        .gold-box {
-            position: absolute;
-            z-index: 3; /* put .gold-box above .green-box and .dashed-box */
-            background: gold;
-            width: 80%;
-            left: 60px;
-            top: 3em;
+        #p3{
+            display: block;
         }
-        .green-box {
-            position: absolute;
-            z-index: auto; /* put .green-box above .dashed-box */
-            background: lightgreen;
-            width: 20%;
-            left: 65%;
-            top: -25px;
-            height: 7em;
-            opacity: 0.9;
+        #p4{
+            display: block;
         }
     </style>
 </head>
-
 <body>
-<h1>This is a heading</h1>
-<div class="wrapper">
-    <div class="dashed-box">Dashed box1</div>
-    <div class="gold-box">Gold box3</div>
-    <div class="green-box">Green box2</div>
-</div>
+
+<p id="p1">这两个段落生成内联盒子,和它的结果</p>
+<p id="p2">这两个元素之间没有距离。</p>
+<p id="p3">这两个段落生成内联盒子,和它的结果</p>
+<p id="p4">这两个元素之间没有距离。</p>
+
 </body>
 </html>
