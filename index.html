@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <style type="text/css">
-        * { margin:0; border:0; padding:0;}
-        .table { display:table; background:#f00;width:500px;margin-left:200px; }
-        .t_row { display:table-caption; border:1px solid #f00; height:100px; background:#00f;}
-        .t_cell { display:table-cell; border:1px solid #f00; height:100px;  background:#0f0 }
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        #clipped0{
+            clip-path: none;
+        }
+        #clipped {
+            margin-bottom: 20px;
+            clip-path: url(#cross);
+        }
+        #clipped1{
+            clip-path:circle(100px at 110px 100px) ;
+        }
+        #clipped2{
+            clip-path: inset(20px round 20px);
+        }
+        #clipped3{
+            clip-path: path('M 0 200 L 0,110 A 110,90 0,0,1 240,100 L 200 340 z');
+        }
+        #clipped4{
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+        #clipped5{
+            clip-path: ellipse(130px 140px at 10% 20%);
+        }
     </style>
 </head>
 <body>
+<img id="clipped0" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<img id="clipped" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<img id="clipped1" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<img id="clipped2" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<img id="clipped3" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<img id="clipped4" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<img id="clipped5" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<img id="clipped6" src="https://mdn.mozillademos.org/files/12668/MDN.svg"
+     alt="MDN logo">
+<svg height="0" width="0">
+    <defs>
+        <clipPath id="cross">
+            <rect y="110" x="137" width="90" height="90"/>
+            <rect x="0" y="110" width="90" height="90"/>
+            <rect x="137" y="0" width="90" height="90"/>
+            <rect x="0" y="0" width="90" height="90"/>
+        </clipPath>
+    </defs>
+</svg>
 
+<!--<select id="clipPath">-->
+<!--    <option value="none">none</option>-->
+<!--    <option value="circle(100px at 110px 100px)">circle</option>-->
+<!--    <option value="url(#cross)" selected>cross</option>-->
+<!--    <option value="inset(20px round 20px)">inset</option>-->
+<!--    <option value="path('M 0 200 L 0,110 A 110,90 0,0,1 240,100 L 200 340 z')">path</option>-->
+<!--</select>-->
 
-
-<div class="table">
-    <div class="t_row">一列</div>
-    <div class="t_cell" style="text-align: center;vertical-align: middle;">两列</div>
-    <div class="t_cell">两列</div>
-</div>
-<div class="table">
-    <div class="t_row">一列</div>
-    <div class="t_cell">三列</div>
-    <div class="t_cell">三列</div>
-    <div class="t_cell">三列</div>
-</div>
-<div class="table">
-    <div class="t_row">一列</div>
-    <div class="t_cell">四列</div>
-    <div class="t_cell">四列</div>
-    <div class="t_cell">四列</div>
-    <div class="t_cell">四列</div>
-</div>
 </body>
 </html>
