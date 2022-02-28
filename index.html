@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .small {
-            font-size: xx-small;
+        #p2 {
+            font: 12px Verdana, "DejaVu Sans", sans-serif;
+            font-size-adjust: 0.58;
         }
-        .larger {
-            font-size: larger;
-        }
-        .point {
-            font-size: 24pt;
-        }
-        .percent {
-            font-size: 200%;
+        #p3{
+            font: 12px Verdana, "DejaVu Sans", sans-serif;
+            font-size-adjust: none;
         }
     </style>
 </head>
 <body>
-<h1 class="small">Small H1</h1>
-<h1 class="larger">Larger H1</h1>
-<h1 class="point">24 point H1</h1>
-<h1 class="percent">200% H1</h1>
+<div style="height: 100px"></div>
+<p id="p1">font-size-adjust 0.58</p>
+<p id="p2">font-size-adjust 0.58</p>
+<p id="p3">font-size-adjust 0.58</p>
 </body>
 </html>
