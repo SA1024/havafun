@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .box {
-            background: pink;
-            height: 80px;
-            width: 80px;
+        input:enabled {
+            color: #2b2;
         }
 
-        .box:empty {
-            background: lime;
+        input:disabled {
+            color: #aaa;
         }
+
     </style>
 </head>
 <body>
-<div class="box"><!-- I will be lime --></div>
-<div class="box">I will be pink</div>
-<div class="box">
-    <!-- I will be red because of the whitespace around this comment -->
-</div>
+<form action="url_of_form">
+    <label for="FirstField">First field (enabled):</label>
+    <input type="text" id="FirstField" value="Lorem"><br>
+
+    <label for="SecondField">Second field (disabled):</label>
+    <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+
+    <input type="button" value="Submit">
+</form>
 </body>
 </html>
