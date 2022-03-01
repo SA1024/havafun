@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        a {
-            /* 指定某些属性的默认值，允许他们使用：visited状态进行样式设置 */
-            background-color: white;
-            border: 1px solid white;
+        :root {
+            --main-bg-color: pink;
         }
 
-        a:visited {
-            background-color: yellow;
-            border-color: hotpink;
-            color: hotpink;
+        body {
+            background-color: var(--main-bg-color);
         }
-
     </style>
 </head>
 <body>
-<a href="#test-visited-link">你是否访问过此链接？</a>
-<a href="">你已经访问过此链接。</a>
+HELLOWORLD
 </body>
 </html>
