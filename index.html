@@ -10,7 +10,7 @@
             height:100px;
             background-color:yellow;
             /* Rotate div */
-            transform:rotate(7deg);
+            transform: rotate3d(1, 2.0, 3.0, 10deg);
         }
         #d2
         {
@@ -18,7 +18,7 @@
             height:100px;
             background-color:yellow;
             /* Rotate div */
-            transform: matrix(1, 2, 3, 4, 5, 6);
+            transform: matrix3d(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0);
         }
         #d3
         {
@@ -26,7 +26,7 @@
             height:100px;
             background-color:yellow;
             /* Rotate div */
-            transform: translate(120px, 50%);
+            transform: translate3d(12px, 50%, 3em);
         }
         #d4
         {
@@ -34,7 +34,7 @@
             height:100px;
             background-color:yellow;
             /* Rotate div */
-            transform: rotate(0.5turn);
+            transform: perspective(17px);
         }
         #d5
         {
@@ -42,7 +42,7 @@
             height:100px;
             background-color:yellow;
             /* Rotate div */
-            transform: skew(30deg, 20deg);
+            transform: scaleZ(1);
         }
         #d6
         {
@@ -50,7 +50,15 @@
             height:100px;
             background-color:yellow;
             /* Rotate div */
-            transform: translateX(120px);
+            transform: translateZ(2px);
+        }
+        #d7
+        {
+            width:200px;
+            height:100px;
+            background-color:yellow;
+            /* Rotate div */
+            transform: scale3d(2.5, 1.2, 0.3);
         }
     </style>
 </head>
