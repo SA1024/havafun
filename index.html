@@ -2,88 +2,78 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>title</title>
+    <title>菜鸟教程(runoob.com)</title>
     <style>
-        #d1
+        #div1
         {
-            width:200px;
-            height:100px;
-            background-color:yellow;
-            /* Rotate div */
-            transform: rotate3d(1, 2.0, 3.0, 10deg);
+            position: relative;
+            height: 200px;
+            width: 200px;
+            margin: 100px;
+            padding:10px;
+            border: 1px solid black;
         }
-        #d2
+
+        #div12
         {
-            width:200px;
-            height:100px;
-            background-color:yellow;
-            /* Rotate div */
-            transform: matrix3d(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0);
+            padding:50px;
+            position: absolute;
+            border: 1px solid black;
+            background-color: red;
+            transform: rotate(45deg);
+            transform-origin:20% 40%;
         }
-        #d3
-        {
-            width:200px;
-            height:100px;
-            background-color:yellow;
-            /* Rotate div */
-            transform: translate3d(12px, 50%, 3em);
+        #div2{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            margin: 100px;
+            padding:10px;
+            border: 1px solid black;
         }
-        #d4
-        {
-            width:200px;
-            height:100px;
-            background-color:yellow;
-            /* Rotate div */
-            transform: perspective(17px);
+        #div22{
+            padding:50px;
+            position: absolute;
+            border: 1px solid black;
+            background-color: red;
+            transform: rotate(45deg);
+            transform-origin: left 5px -3px;
         }
-        #d5
-        {
-            width:200px;
-            height:100px;
-            background-color:yellow;
-            /* Rotate div */
-            transform: scaleZ(1);
-        }
-        #d6
-        {
-            width:200px;
-            height:100px;
-            background-color:yellow;
-            /* Rotate div */
-            transform: translateZ(2px);
-        }
-        #d7
-        {
-            width:200px;
-            height:100px;
-            background-color:yellow;
-            /* Rotate div */
-            transform: scale3d(2.5, 1.2, 0.3);
+        #svg1{
+            transform: rotate(45deg);
+            transform-origin: right 50px -30px;
         }
     </style>
 </head>
+
 <body>
 
-<div id="d1">Hello</div>
-<div id="d2">Hello</div>
-<div id="d3">Hello</div>
-<div id="d4">Hello</div>
-<div id="d5">Hello</div>
-<div id="d6">Hello</div>
-<div id="d7">Hello</div>
-<div id="d8">Hello</div>
-<div id="d9">Hello</div>
-<div id="d10">Hello</div>
-<div id="d11">Hello</div>
-<div id="d12">Hello</div>
-<div id="d13">Hello</div>
-<div id="d14">Hello</div>
-<div id="d15">Hello</div>
-<div id="d16">Hello</div>
-<div id="d17">Hello</div>
-<div id="d18">Hello</div>
-<div id="d19">Hello</div>
-<div id="d20">Hello</div>
-<div id="d21">Hello</div>
+<div id="div1">
+    <div id="div12">HELLO</div>
+</div>
+
+<div id="div2">
+    <div id="div22">Three Syntax</div>
+</div>
+
+<div id="div3">
+    <div id="div33">svg</div>
+</div>
+<svg viewBox="-20 -20 820 420" xmlns="http://www.w3.org/2000/svg" width="800" height="400" id="svg1">
+
+    <text x="200" y="0">...unrotated text; same starting position as examples below (in all cases: x="200" y="0")</text>
+
+    <circle cx="200" cy="0" r="2" style="stroke: green; stroke-width: 1; fill: green;" />
+    <text x="200" y="0" transform="rotate(45 200,0)"  style="fill: green;" >...(1) rotate(45 200,0) (rotated 45° around a point at 200,0)</text>
+
+    <circle cx="100" cy="0" r="2" style="stroke: blue; stroke-width: 1; fill: blue;" />
+    <path d="M 200,0 A 100,100 0 0,1 0,0" style="stroke: blue; stroke-width: 1; fill: transparent;" />
+    <text x="200" y="0" transform="rotate(45 100,0)" style="fill: blue;">...(2) rotate(45 100,0) (rotated 45° around a point at 100,0)</text>
+
+    <circle cx="0" cy="0" r="2" style="stroke: red; stroke-width: 1; fill: red;" />
+    <path d="M 200,0 A 200,200 0 0,1 0,200" style="stroke: red; stroke-width: 1; fill: transparent;" />
+    <text x="200" y="0" transform="rotate(45 0,0)" style="fill: red;" >...(3) rotate(45 0,0) (rotated 45° around a point at 0,0)</text>
+
+</svg>
 </body>
 </html>
