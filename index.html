@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .p1 {
-            text-decoration-line: underline;
-            text-decoration-color: cyan;
+        #p1 {
+            margin: 0;
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-skip: none;
         }
-
-        s {
-            text-decoration-line: line-through;
-            text-decoration-color: red;
-            text-decoration-style: wavy;
+        #p2 {
+            margin: 0;
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-skip: objects;
         }
-        .wavy {
-            text-decoration-line: underline;
-            text-decoration-style: wavy;
-            text-decoration-color: red;
+        #p3{
+            margin: 0;
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-skip: spaces;
+        }
+        #p4{
+            margin: 0;
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-skip: leading-spaces;
+        }
+        #p5{
+            margin: 0;
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-skip: trailing-spaces;
+        }
+        #p6{
+            margin: 0;
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-skip: edges;
         }
     </style>
 </head>
 <body>
-<p class="p1">This paragraph has <s>some erroneous text</s>
-    inside it that I want to call attention to.</p>
-<p class="wavy">This text has a wavy red line beneath it.</p>
-
+<p id="p1"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
+<p id="p2"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
+<p id="p3"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
+<p id="p4"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
+<p id="p5"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
+<p id="p6"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
 </body>
 </html>
