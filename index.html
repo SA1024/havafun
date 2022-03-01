@@ -4,37 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        /* Set paragraph text to be bold. */
-        p {
-            font-weight: bold;
+        .p1 {
+            text-decoration-line: underline;
+            text-decoration-color: cyan;
         }
 
-        /* Set div text to two steps darker than
-           normal but less than a standard bold. */
-        div {
-            font-weight: 1000;
+        s {
+            text-decoration-line: line-through;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
         }
-
-        /* Sets text enclosed within span tag
-           to be one step lighter than the parent. */
-        span {
-            font-weight: lighter;
+        .wavy {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: red;
         }
     </style>
 </head>
 <body>
-<p>
-    Alice was beginning to get very tired of sitting by her sister on the
-    bank, and of having nothing to do: once or twice she had peeped into the
-    book her sister was reading, but it had no pictures or conversations in
-    it, 'and what is the use of a book,' thought Alice 'without pictures or
-    conversations?'
-</p>
-
-<div>I'm heavy<br/>
-
-</div>
-<span>I'm lighter</span>
+<p class="p1">This paragraph has <s>some erroneous text</s>
+    inside it that I want to call attention to.</p>
+<p class="wavy">This text has a wavy red line beneath it.</p>
 
 </body>
 </html>
