@@ -4,50 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #p1 {
-            margin: 0;
-            font-size: 3em;
-            text-decoration: underline;
-            text-decoration-skip: none;
+        a {
+            /* 指定某些属性的默认值，允许他们使用：visited状态进行样式设置 */
+            background-color: white;
+            border: 1px solid white;
         }
-        #p2 {
-            margin: 0;
-            font-size: 3em;
-            text-decoration: underline;
-            text-decoration-skip: objects;
+
+        a:visited {
+            background-color: yellow;
+            border-color: hotpink;
+            color: hotpink;
         }
-        #p3{
-            margin: 0;
-            font-size: 3em;
-            text-decoration: underline;
-            text-decoration-skip: spaces;
-        }
-        #p4{
-            margin: 0;
-            font-size: 3em;
-            text-decoration: underline;
-            text-decoration-skip: leading-spaces;
-        }
-        #p5{
-            margin: 0;
-            font-size: 3em;
-            text-decoration: underline;
-            text-decoration-skip: trailing-spaces;
-        }
-        #p6{
-            margin: 0;
-            font-size: 3em;
-            text-decoration: underline;
-            text-decoration-skip: edges;
-        }
+
     </style>
 </head>
 <body>
-<p id="p1"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
-<p id="p2"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
-<p id="p3"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
-<p id="p4"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
-<p id="p5"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
-<p id="p6"><em>Hey,</em> <em>grab a cup of coffee!</em></p>
+<a href="#test-visited-link">你是否访问过此链接？</a>
+<a href="">你已经访问过此链接。</a>
 </body>
 </html>
