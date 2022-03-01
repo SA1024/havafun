@@ -1,225 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>菜鸟教程(runoob.com)</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
     <style>
-
-        #main {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: start;
+        .box {
+            background: pink;
+            height: 80px;
+            width: 80px;
         }
 
-        div {
-            width: 70px;
-            height: 70px;
-        }
-        #main1 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: start;
-        }
-        #main2 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: end;
-        }
-        #main3 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: center;
-        }
-        #main4 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: flex-start;
-        }
-        #main5 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: flex-end;
-        }
-        #main6 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: left;
-        }
-        #main7 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: right;
-        }
-        #main8 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: space-between;;
-        }
-        #main9 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: space-around;
-        }
-        #main10 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        #main11 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: stretch;
-        }
-        #main12 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: safe;
-        }
-        #main13 {
-            width: 400px;
-            height: 150px;
-            border: 1px solid #c3c3c3;
-            display: flex;
-            justify-content: unsafe ;
+        .box:empty {
+            background: lime;
         }
     </style>
 </head>
 <body>
-<div id="main16">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
+<div class="box"><!-- I will be lime --></div>
+<div class="box">I will be pink</div>
+<div class="box">
+    <!-- I will be red because of the whitespace around this comment -->
 </div>
-<div id="main">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-
-<div id="main1">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-
-<div id="main2">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-
-<div id="main3">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-
-<div id="main4">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-
-<div id="main5">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main6">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-
-<div id="main7">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main8">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main9">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main10">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main11">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main12">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main13">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main14">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-<div id="main15">
-    <div style="background-color:coral;"></div>
-    <div style="background-color:lightblue;"></div>
-    <div style="background-color:khaki;"></div>
-    <div style="background-color:pink;"></div>
-</div>
-
-
 </body>
 </html>
