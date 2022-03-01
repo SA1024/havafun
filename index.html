@@ -4,62 +4,40 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        /*
-AmstelvarAlpha-VF 由 David Berlow 制作：https://github.com/TypeNetwork/Amstelvar
-在此使用时，遵循此开源协议：
-https://github.com/TypeNetwork/Amstelvar/blob/master/OFL.txt
-*/
-
-        @font-face {
-            src: url('https://mdn.mozillademos.org/files/16044/AmstelvarAlpha-VF.ttf');
-            font-family:'AmstelvarAlpha';
-            font-style: normal;
+        input:invalid {
+            background-color: #ffdddd;
         }
 
-        label {
-            font: 1rem monospace;
+        form:invalid {
+            border: 5px solid #ffdddd;
         }
 
-        .container {
-            max-height: 150px;
-            overflow: scroll;
+        input:valid {
+            background-color: #ddffdd;
         }
 
-        .sample {
-            font: 2rem 'AmstelvarAlpha', sans-serif;
+        form:valid {
+            border: 5px solid #ddffdd;
         }
-        p.normal {font-style:normal;}
-        p.italic {font-style:italic;}
-        p.oblique {font-style:oblique;}
 
+        input:required {
+            border-color: #800000;
+            border-width: 3px;
+        }
+
+        input:required:invalid {
+            border-color: #C00000;
+        }
     </style>
 </head>
 <body>
-<header>
-    <input type="range" id="slant" name="slant" min="-90" max="90" />
-    <label for="slant">Slant</label>
-</header>
-<div class="container">
-    <p class="sample">...it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</p>
-</div>
-<p class="normal">这是一个段落,正常。</p>
-<p class="italic">这是一个段落,斜体。</p>
-<p class="oblique">这是一个段落,斜体。</p>
-<script>
-    let slantLabel = document.querySelector('label[for="slant"]');
-    let slantInput = document.querySelector('#slant');
-    let sampleText = document.querySelector('.sample');
-
-    function update() {
-        let slant = `oblique ${slantInput.value}deg`;
-        slantLabel.textContent = `font-style: ${slant};`;
-        sampleText.style.fontStyle = slant;
-    }
-
-    slantInput.addEventListener('input', update);
-
-    update();
-
-</script>
+<form>
+    <label for="url_input">Enter a URL:</label>
+    <input type="url" id="url_input" />
+    <br />
+    <br />
+    <label for="email_input">Enter an email address:</label>
+    <input type="email" id="email_input" required/>
+</form>
 </body>
 </html>
