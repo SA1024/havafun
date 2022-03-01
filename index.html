@@ -4,37 +4,75 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .a {
-            background-color: rgb(0,255,0);
+        .example.Text1 span, .example.Text1 {
+            writing-mode: horizontal-tb;
+            -webkit-writing-mode: horizontal-tb;
+            -ms-writing-mode: horizontal-tb;
         }
-        #b {
-            width: 200px;
-            height: 210px;
+
+        .example.Text2 span, .example.Text2 {
+            writing-mode: vertical-lr;
+            -webkit-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
         }
-        .c {
-            width: 100px;
-            height: 100px;
-            border: 1px solid black;
-            padding: 2px;
-            mix-blend-mode: difference;
+
+        .example.Text3 span, .example.Text3 {
+            writing-mode: vertical-rl;
+            -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
         }
-        #d {
-            isolation: auto;
+
+        .example.Text4 span, .example.Text4 {
+            writing-mode: sideways-lr;
+            -webkit-writing-mode: sideways-lr;
+            -ms-writing-mode: sideways-lr;
         }
-        #e {
-            isolation: isolate;
+
+        .example.Text5 span, .example.Text5 {
+            writing-mode: sideways-rl;
+            -webkit-writing-mode: sideways-rl;
+            -ms-writing-mode: sideways-rl;
         }
     </style>
 </head>
 <body>
-<div id="b" class="a">
-    <div id="d">
-        <div class="a c">auto</div>
-    </div>
-    <div id="e">
-        <div class="a c">isolate</div>
-    </div>
-</div>
-
+<table>
+    <tr>
+        <th>Value</th>
+        <th>Vertical script</th>
+        <th>Horizontal script</th>
+        <th>Mixed script</th>
+    </tr>
+    <tr>
+        <td>horizontal-tb</td>
+        <td class="example Text1"><span>我家没有电脑。</span></td>
+        <td class="example Text1"><span>Example text</span></td>
+        <td class="example Text1"><span>1994年に至っては</span></td>
+    </tr>
+    <tr>
+        <td>vertical-lr</td>
+        <td class="example Text2"><span>我家没有电脑。</span></td>
+        <td class="example Text2"><span>Example text</span></td>
+        <td class="example Text2"><span>1994年に至っては</span></td>
+    </tr>
+    <tr>
+        <td>vertical-rl</td>
+        <td class="example Text3"><span>我家没有电脑。</span></td>
+        <td class="example Text3"><span>Example text</span></td>
+        <td class="example Text3"><span>1994年に至っては</span></td>
+    </tr>
+    <tr>
+        <td>sideways-lr</td>
+        <td class="example Text4"><span>我家没有电脑。</span></td>
+        <td class="example Text4"><span>Example text</span></td>
+        <td class="example Text4"><span>1994年に至っては</span></td>
+    </tr>
+    <tr>
+        <td>sideways-rl</td>
+        <td class="example Text5"><span>我家没有电脑。</span></td>
+        <td class="example Text5"><span>Example text</span></td>
+        <td class="example Text5"><span>1994年に至っては</span></td>
+    </tr>
+</table>
 </body>
 </html>
