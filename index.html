@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        let paragraph = document.getElementById("para");
+        let output = document.getElementById("output");
+
+        if (paragraph.matches(":scope")) {
+            output.innerText = "Yep, the element is its own scope as expected!";
+        }
+    </script>
     <style>
-        q {
-            quotes: '"' '"' "'" "'";
-        }
-        q::before {
-            content: open-quote;
-        }
-        q:after {
-            content: close-quote;
+        /* Selects a scoped element */
+        :scope {
+            background-color: lime;
         }
     </style>
 </head>
 <body>
-<q>To be or not to be. That's the question!</q>
-
+<div style="height: 100px"></div>
+<p id="para">
+    This is a paragraph. It is not an interesting paragraph. Sorry about that.
+</p>
+<p id="output"></p>
 </body>
 </html>
