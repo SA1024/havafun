@@ -1,75 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>锚点平滑跳转</title>
-
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        #p1
+        {
+            -webkit-text-emphasis: none red;
         }
-        html{
-            scroll-behavior: smooth;
+        #p2{
+            -webkit-text-emphasis: filled red;
         }
-        nav{
-            width: 50%;
-            height: 50px;
-            text-align: center;
-            position: fixed;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 200px;
-            background: green;
+        #p3{
+            -webkit-text-emphasis: open red;
         }
-        nav a{
-            display: inline-block;
-            line-height: 50px;
-            color: #FFF;
-            text-decoration: none;
-            padding: 0 30px;
+        #p4{
+            -webkit-text-emphasis: dot red;
         }
+        #p5{
+            -webkit-text-emphasis: circle red;
+        }
+        #p6{
+            -webkit-text-emphasis: double-circle red;
+        }
+        #p7{
+            -webkit-text-emphasis: triangle #D55;
+        }
+        #p8{
+            -webkit-text-emphasis: sesame red;
+        }
+        #p9{
+            -webkit-text-emphasis: '点' red;
+        }
+        #p10{
 
-
-        .box{
-            width: 100%;
-            text-align: center;
-            font-size: 30px;
-            color: #FFF;
-        }
-        #box1{
-            background: #d00;
-        }
-        #box2{
-            background: #42a4ff;
-        }
-        #box3{
-            background: #008080;
         }
     </style>
 </head>
 <body>
-<nav>
-    <a href="#box1">box1</a>
-    <a href="#box2">box2</a>
-    <a href="#box3">box3</a>
-</nav>
 
-<div id="box1" class=" box">box1</div>
-<div id="box2" class=" box">box2</div>
-<div id="box3" class=" box">box3</div>
+<p id="p1">我的第一个段落。</p>
+<p id="p2">我的第一个段落。</p>
+<p id="p3">我的第一个段落。</p>
+<p id="p4">我的第一个段落。</p>
+<p id="p5">我的第一个段落。</p>
+<p id="p6">我的第一个段落。</p>
+<p id="p7">我的第一个段落。</p>
+<p id="p8">我的第一个段落。</p>
+<p id="p9">我的第一个段落。</p>
+<p id="p10">我的第一个段落。</p>
+<p id="p11">我的第一个段落。</p>
+<p id="p12">我的第一个段落。</p>
+<p id="p13">我的第一个段落。</p>
 
-<script>
-    onload = function(){
-        const _Height = document.documentElement.clientHeight;
-        const Box = document.getElementsByClassName('box');
 
-        for (var i=0;i<Box.length;i++){
-            Box[i].style.height = _Height + 'px'
-            Box[i].style.lineHeight = _Height + 'px'
-        }
-
-    }
-</script>
 </body>
 </html>
