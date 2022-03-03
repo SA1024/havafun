@@ -4,50 +4,101 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        td{
-            font-family:"Yu Gothic";
-            font-size:20px;
+        p {
+            font-family: Lora, serif;
         }
-        th{
-            color:grey;
-            padding-right:10px;
+        .normal {
+            font-variant-ligatures: normal;
         }
 
-        .ruby {
-            font-variant-east-asian: ruby;
+        .none {
+            font-variant-ligatures: none;
         }
 
-        .jis78 {
-            font-variant-east-asian: jis78;
+        .common-ligatures {
+            font-variant-ligatures: common-ligatures;
         }
 
-        .traditional{
-            font-variant-east-asian: traditional;
+        .no-common-ligatures {
+            font-variant-ligatures: no-common-ligatures;
         }
 
+        .discretionary-ligatures {
+            font-variant-ligatures: discretionary-ligatures;
+        }
+
+        .no-discretionary-ligatures {
+            font-variant-ligatures: no-discretionary-ligatures;
+        }
+
+        .historical-ligatures {
+            font-variant-ligatures: historical-ligatures;
+        }
+
+        .no-historical-ligatures {
+            font-variant-ligatures: no-historical-ligatures;
+        }
+
+        .contextual {
+            font-variant-ligatures: contextual;
+        }
+
+        .no-contextual {
+            font-variant-ligatures: no-contextual;
+        }
+
+        .contextual {
+            font-variant-ligatures: contextual;
+        }
     </style>
 </head>
 <body>
-<table>
-    <thead></thead>
-    <tbody style="border:0;">
-    <tr>
-        <th>normal/jis78:</th>
-        <td>麹町</td>
-        <td class="jis78">麹町</td>
-    </tr>
-    <tr>
-        <th>normal/ruby:</th>
-        <td>しんかんせん</td>
-        <td class="ruby">しんかんせん</td>
-    </tr>
-    <tr>
-        <th>normal/traditional:</th>
-        <td>大学</td>
-        <td class="traditional">大学</td>
-    </tr>
-    </tbody>
-</table>
+<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<p class="normal">
+    normal<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="none">
+    none<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="common-ligatures">
+    common-ligatures<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="no-common-ligatures">
+    no-common-ligatures<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="discretionary-ligatures">
+    discretionary-ligatures<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="no-discretionary-ligatures">
+    no-discretionary-ligatures<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="historical-ligatures">
+    historical-ligatures<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="no-historical-ligatures">
+    no-historical-ligatures<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="contextual">
+    contextual<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="no-contextual">
+    no-contextual<br>
+    if fi ff tf ft jf fj
+</p>
+<p class="contextual">
+    contextual<br>
+    if fi ff tf ft jf fj
+</p>
+
 
 </body>
 </html>
