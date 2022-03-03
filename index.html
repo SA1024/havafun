@@ -4,18 +4,43 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        p.normal {
-            font-variant: normal;
+        .small-caps {
+            font-variant-caps: small-caps;
+            font-style: italic;
         }
-        p.small {
-            font-variant: small-caps;
+        .normal {
+            font-variant-caps: normal;
+            font-style: italic;
         }
-
+        .all-small-caps{
+            font-variant-caps: all-small-caps;
+            font-style: italic;
+        }
+        .petite-caps{
+            font-variant-caps: petite-caps;
+            font-style: italic;
+        }
+        .all-petite-caps{
+            font-variant-caps: all-petite-caps;
+            font-style: italic;
+        }
+        .unicase{
+            font-variant-caps: unicase;
+            font-style: italic;
+        }
+        .titling-caps{
+            font-variant-caps: titling-caps;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-<p class="normal">Firefox rocks!</p>
-<p class="small">Firefox rocks!</p>
-
+<p class="small-caps">Firefox rocks, small caps!</p>
+<p class="normal">Firefox rocks, normal caps!</p>
+<p class="all-small-caps">Firefox rocks, normal caps!</p>
+<p class="petite-caps">Firefox rocks, normal caps!</p>
+<p class="all-petite-caps">Firefox rocks, normal caps!</p>
+<p class="unicase">Firefox rocks, normal caps!</p>
+<p class="titling-caps">Firefox rocks, normal caps!</p>
 </body>
 </html>
