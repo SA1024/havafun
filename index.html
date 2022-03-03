@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .small-caps {
-            font-variant-caps: small-caps;
-            font-style: italic;
+        td{
+            font-family:"Yu Gothic";
+            font-size:20px;
         }
-        .normal {
-            font-variant-caps: normal;
-            font-style: italic;
+        th{
+            color:grey;
+            padding-right:10px;
         }
-        .all-small-caps{
-            font-variant-caps: all-small-caps;
-            font-style: italic;
+
+        .ruby {
+            font-variant-east-asian: ruby;
         }
-        .petite-caps{
-            font-variant-caps: petite-caps;
-            font-style: italic;
+
+        .jis78 {
+            font-variant-east-asian: jis78;
         }
-        .all-petite-caps{
-            font-variant-caps: all-petite-caps;
-            font-style: italic;
+
+        .traditional{
+            font-variant-east-asian: traditional;
         }
-        .unicase{
-            font-variant-caps: unicase;
-            font-style: italic;
-        }
-        .titling-caps{
-            font-variant-caps: titling-caps;
-            font-style: italic;
-        }
+
     </style>
 </head>
 <body>
-<p class="small-caps">Firefox rocks, small caps!</p>
-<p class="normal">Firefox rocks, normal caps!</p>
-<p class="all-small-caps">Firefox rocks, normal caps!</p>
-<p class="petite-caps">Firefox rocks, normal caps!</p>
-<p class="all-petite-caps">Firefox rocks, normal caps!</p>
-<p class="unicase">Firefox rocks, normal caps!</p>
-<p class="titling-caps">Firefox rocks, normal caps!</p>
+<table>
+    <thead></thead>
+    <tbody style="border:0;">
+    <tr>
+        <th>normal/jis78:</th>
+        <td>麹町</td>
+        <td class="jis78">麹町</td>
+    </tr>
+    <tr>
+        <th>normal/ruby:</th>
+        <td>しんかんせん</td>
+        <td class="ruby">しんかんせん</td>
+    </tr>
+    <tr>
+        <th>normal/traditional:</th>
+        <td>大学</td>
+        <td class="traditional">大学</td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
