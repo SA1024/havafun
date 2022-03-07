@@ -1,58 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        #d1 {
-            width: 300px;
-            height: 300px;
-            background: repeating-linear-gradient(red, orange 50px);
-            clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
-            animation: 4s poly infinite alternate ease-in-out;
-            margin: 10px auto;
-        }
-
-        @keyframes poly {
-            from {
-                clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
-            }
-
-            to {
-                clip-path: polygon(50% 30%, 100% 0%, 70% 50%, 100% 100%, 50% 70%, 0% 100%, 30% 50%, 0% 0%);
-            }
-        }
-        #d2{
-            width: 300px;
-            height: 300px;
-            background: repeating-linear-gradient(red, orange 50px);
-            clip-path: inset(22% 12% 15px 35px);
-        }
-        #d3{
-            width: 300px;
-            height: 300px;
-            background: repeating-linear-gradient(red, orange 50px);
-            clip-path: circle(6rem at 12rem 8rem);
-        }
-        #d4{
-            width: 300px;
-            height: 300px;
-            background: repeating-linear-gradient(red, orange 50px);
-            clip-path: ellipse(115px 55px at 50% 40%);
-        }
-        #d5{
-            width: 300px;
-            height: 300px;
-            background: repeating-linear-gradient(red, orange 50px);
-            clip-path: path('M 50,245 A 160,160 0,0,1 360,120 z');
-        }
-    </style>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
 </head>
 <body>
-<div id="d1"></div>
-<div id="d2"></div>
-<div id="d3"></div>
-<div id="d4"></div>
-<div id="d5"></div>
+
+<script>
+    var str="Hello world!";
+    //查找"Hello"
+    var patt=/Hello/g;
+    var result=patt.exec(str);
+    document.write("返回值: " +  result);
+    //查找 "RUNOOB"
+    patt=/RUNOOB/g;
+    result=patt.exec(str);
+    document.write("<br>返回值: " +  result);
+</script>
+
 </body>
 </html>
