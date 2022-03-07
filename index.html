@@ -1,55 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
     <style>
-        .narrow {
-            padding: 10px;
-            border: 1px solid;
-            width: 500px;
-            margin: 0 auto;
-            font-size: 20px;
-            line-height: 1.5;
-            letter-spacing: 1px;
+        p.test1{
+            width:11em;
+            border:1px solid #000000;
+            word-wrap:normal;
         }
-
-        .normal {
-            word-break: normal;
+        p.test
+        {
+            width:11em;
+            border:1px solid #000000;
+            word-wrap:break-word;
         }
-
-        .breakAll {
-            word-break: break-all;
-        }
-
-        .keepAll {
-            word-break: keep-all;
-        }
-
-        .breakWord {
-            word-break: break-word;
+        p.test2
+        {
+            width:11em;
+            border:1px solid #000000;
+            word-wrap:anywhere;
         }
     </style>
 </head>
 <body>
-<p>1. <code>word-break: normal</code></p>
-<p class="normal narrow">This is a long and
-    Honorificabilitudinitatibus califragilisticexpialidocious Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
-    グレートブリテンおよび北アイルランド連合王国という言葉は本当に長い言葉</p>
+<p class="test1"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
 
-<p>2. <code>word-break: break-all</code></p>
-<p class="breakAll narrow">This is a long and
-    Honorificabilitudinitatibus califragilisticexpialidocious Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
-    グレートブリテンおよび北アイルランド連合王国という言葉は本当に長い言葉</p>
+<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
 
-<p>3. <code>word-break: keep-all</code></p>
-<p class="keepAll narrow">This is a long and
-    Honorificabilitudinitatibus califragilisticexpialidocious Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
-    グレートブリテンおよび北アイルランド連合王国という言葉は本当に長い言葉</p>
-
-<p>4. <code>word-break: break-word</code></p>
-<p class="breakWord narrow">This is a long and
-    Honorificabilitudinitatibus califragilisticexpialidocious Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu
-    グレートブリテンおよび北アイルランド連合王国という言葉は本当に長い言葉</p>
+<p class="test2">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
 </body>
 </html>
