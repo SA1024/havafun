@@ -109,6 +109,66 @@
             width: 100%;
             overflow: hidden;
         }
+        .polling_message4 {
+            color: white;
+            float: left;
+            margin-right: 2%;
+        }
+        .cylon_eye4 {
+            background-color: red;
+            background-image: linear-gradient(to right,
+            rgba(0, 0, 0, .9) 25%,
+            rgba(0, 0, 0, .1) 50%,
+            rgba(0, 0, 0, .9) 75%);
+            color: white;
+            height: 100%;
+            width: 20%;
+            /*animation: 4s linear 0s infinite alternate move_eye;*/
+            animation-name: move_eye;
+            animation-delay: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 3;
+            animation-play-state: running;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+
+        }
+        .view_port4 {
+            background-color: black;
+            height: 25px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .polling_message5 {
+            color: white;
+            float: left;
+            margin-right: 2%;
+        }
+        .cylon_eye5 {
+            background-color: red;
+            background-image: linear-gradient(to right,
+            rgba(0, 0, 0, .9) 25%,
+            rgba(0, 0, 0, .1) 50%,
+            rgba(0, 0, 0, .9) 75%);
+            color: white;
+            height: 100%;
+            width: 20%;
+            /*animation: 4s linear 0s infinite alternate move_eye;*/
+            animation-name: move_eye;
+            animation-delay: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 3;
+            animation-play-state: paused;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+
+        }
+        .view_port5 {
+            background-color: black;
+            height: 25px;
+            width: 100%;
+            overflow: hidden;
+        }
         @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
     </style>
 </head>
@@ -138,6 +198,17 @@
     </div>
     <div class="cylon_eye3"></div>
 </div>
-<h1>234324324324</h1>
+<div class="view_port4">
+    <div class="polling_message4">
+        Listening for dispatches
+    </div>
+    <div class="cylon_eye4"></div>
+</div>
+<div class="view_port5">
+    <div class="polling_message5">
+        Listening for dispatches
+    </div>
+    <div class="cylon_eye5"></div>
+</div>
 </body>
 </html>
