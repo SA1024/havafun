@@ -4,28 +4,30 @@
     <meta charset="utf-8">
     <title>菜鸟教程(runoob.com)</title>
     <style>
-        #p1{
-            word-spacing: normal;
+        p.test1{
+            width:11em;
+            border:1px solid #000000;
+            word-wrap:normal;
         }
-        #p2
+        p.test
         {
-            word-spacing:30px;
+            width:11em;
+            border:1px solid #000000;
+            word-wrap:break-word;
         }
-        #p3{
-            word-spacing:500%;
+        p.test2
+        {
+            width:11em;
+            border:1px solid #000000;
+            word-wrap:anywhere;
         }
     </style>
 </head>
 <body>
+<p class="test1"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
 
-<p id="p1">
-    This is some text. This is some text.
-</p>
-<p id="p2">
-    This is some text. This is some text.
-</p>
-<p id="p3">
-    This is some text. This is some text.
-</p>
+<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+<p class="test2">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
 </body>
 </html>
