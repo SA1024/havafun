@@ -5,100 +5,49 @@
     <title>Title</title>
     <style>
         p {
-            font-family: Lora, serif;
-        }
-        .normal {
-            font-variant-ligatures: normal;
-        }
-
-        .none {
-            font-variant-ligatures: none;
+            width: 13em;
+            margin: 2px;
+            background: gold;
         }
 
-        .common-ligatures {
-            font-variant-ligatures: common-ligatures;
+        .ow-anywhere {
+            overflow-wrap: anywhere;
         }
 
-        .no-common-ligatures {
-            font-variant-ligatures: no-common-ligatures;
+        .ow-break-word {
+            overflow-wrap: break-word;
         }
 
-        .discretionary-ligatures {
-            font-variant-ligatures: discretionary-ligatures;
+        .word-break {
+            word-break: break-all;
         }
 
-        .no-discretionary-ligatures {
-            font-variant-ligatures: no-discretionary-ligatures;
-        }
-
-        .historical-ligatures {
-            font-variant-ligatures: historical-ligatures;
-        }
-
-        .no-historical-ligatures {
-            font-variant-ligatures: no-historical-ligatures;
-        }
-
-        .contextual {
-            font-variant-ligatures: contextual;
-        }
-
-        .no-contextual {
-            font-variant-ligatures: no-contextual;
-        }
-
-        .contextual {
-            font-variant-ligatures: contextual;
+        .hyphens {
+            hyphens: auto;
         }
     </style>
 </head>
 <body>
-<link href="//fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<p class="normal">
-    normal<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="none">
-    none<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="common-ligatures">
-    common-ligatures<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="no-common-ligatures">
-    no-common-ligatures<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="discretionary-ligatures">
-    discretionary-ligatures<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="no-discretionary-ligatures">
-    no-discretionary-ligatures<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="historical-ligatures">
-    historical-ligatures<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="no-historical-ligatures">
-    no-historical-ligatures<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="contextual">
-    contextual<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="no-contextual">
-    no-contextual<br>
-    if fi ff tf ft jf fj
-</p>
-<p class="contextual">
-    contextual<br>
-    if fi ff tf ft jf fj
-</p>
-
-
+<p>They say the fishing is excellent at
+    Lake <em class="normal">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+    though I've never been there myself. (<code>normal</code>)</p>
+<p>They say the fishing is excellent at
+    Lake <em class="ow-anywhere">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+    though I've never been there myself. (<code>overflow-wrap: anywhere</code>)</p>
+<p>They say the fishing is excellent at
+    Lake <em class="ow-break-word">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+    though I've never been there myself. (<code>overflow-wrap: break-word</code>)</p>
+<p>They say the fishing is excellent at
+    Lake <em class="word-break">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+    though I've never been there myself. (<code>word-break</code>)</p>
+<p>They say the fishing is excellent at
+    Lake <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+    though I've never been there myself. (<code>hyphens</code>, without <code>lang</code> attribute)</p>
+<p lang="en">They say the fishing is excellent at
+    Lake <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+    though I've never been there myself. (<code>hyphens</code>, English rules)</p>
+<p class="hyphens" lang="de">They say the fishing is excellent at
+    Lake <em class="hyphens">Chargoggagoggmanchauggagoggchaubunagungamaugg</em>,
+    though I've never been there myself. (<code>hyphens</code>, German rules)</p>
 </body>
 </html>
