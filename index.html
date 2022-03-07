@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        @keyframes move {
-            from {
-                offset-distance: 0%;
-            }
+        /*@keyframes move {*/
+        /*    from {*/
+        /*        offset-distance: 0%;*/
+        /*    }*/
 
-            to {
-                offset-distance: 100%;
-            }
-        }
+        /*    to {*/
+        /*        offset-distance: 100%;*/
+        /*    }*/
+        /*}*/
 
         #offsetElement {
             width: 50px;
@@ -21,10 +21,25 @@
             offset: path("M 100 100 L 300 100 L 200 300 z") auto;
             animation: move 3s linear infinite;
         }
-
+        #offsetElement1 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            /*offset: path("M 100 100 L 300 100 L 200 300 z") auto;*/
+            /*animation: move 3s linear infinite;*/
+        }
+        #offsetElement2 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            /*offset: path("M 100 100 L 300 100 L 200 300 z") auto;*/
+            /*animation: move 3s linear infinite;*/
+        }
     </style>
 </head>
 <body>
 <div id="offsetElement"></div>
+<div id="offsetElement1"></div>
+<div id="offsetElement2"></div>
 </body>
 </html>
