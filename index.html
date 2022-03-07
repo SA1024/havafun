@@ -4,42 +4,40 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        /*@keyframes move {*/
-        /*    from {*/
-        /*        offset-distance: 0%;*/
-        /*    }*/
+        .polling_message {
+            color: white;
+            float: left;
+            margin-right: 2%;
+        }
 
-        /*    to {*/
-        /*        offset-distance: 100%;*/
-        /*    }*/
-        /*}*/
+        .view_port {
+            background-color: black;
+            height: 25px;
+            width: 100%;
+            overflow: hidden;
+        }
 
-        #offsetElement {
-            width: 50px;
-            height: 50px;
-            background-color: blue;
-            offset: path("M 100 100 L 300 100 L 200 300 z") auto;
-            animation: move 3s linear infinite;
+        .cylon_eye {
+            background-color: red;
+            background-image: linear-gradient(to right,
+            rgba(0, 0, 0, .9) 25%,
+            rgba(0, 0, 0, .1) 50%,
+            rgba(0, 0, 0, .9) 75%);
+            color: white;
+            height: 100%;
+            width: 20%;
+            animation: 4s linear 0s infinite alternate move_eye;
         }
-        #offsetElement1 {
-            width: 50px;
-            height: 50px;
-            background-color: blue;
-            /*offset: path("M 100 100 L 300 100 L 200 300 z") auto;*/
-            /*animation: move 3s linear infinite;*/
-        }
-        #offsetElement2 {
-            width: 50px;
-            height: 50px;
-            background-color: blue;
-            /*offset: path("M 100 100 L 300 100 L 200 300 z") auto;*/
-            /*animation: move 3s linear infinite;*/
-        }
+
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
     </style>
 </head>
 <body>
-<div id="offsetElement"></div>
-<div id="offsetElement1"></div>
-<div id="offsetElement2"></div>
+<div class="view_port">
+    <div class="polling_message">
+        Listening for dispatches
+    </div>
+    <div class="cylon_eye"></div>
+</div>
 </body>
 </html>
