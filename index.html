@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>菜鸟教程(runoob.com)</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul li {
+            color: blue;
+        }
+
+        ul li:first-child {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
-<script>
-    var str="Hello world!";
-    //查找"Hello"
-    var patt=/Hello/g;
-    var result=patt.exec(str);
-    document.write("返回值: " +  result);
-    //查找 "RUNOOB"
-    patt=/RUNOOB/g;
-    result=patt.exec(str);
-    document.write("<br>返回值: " +  result);
-</script>
-
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3
+        <ul>
+            <li>Item 3.1</li>
+            <li>Item 3.2</li>
+            <li>Item 3.3</li>
+        </ul>
+    </li>
+</ul>
 </body>
 </html>
